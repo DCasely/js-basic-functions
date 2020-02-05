@@ -104,3 +104,21 @@ function capitalize(str) {
 var capitalize = function(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 };
+
+// EXERCISE 1
+
+function test(x, y) {
+  return y - x;
+}
+
+test(10, 40);
+
+// EXERCISE 2
+
+function test(x) {
+  return x * 2;
+  console.log(x);
+  return x / 2;
+}
+
+test(40);
