@@ -122,3 +122,40 @@ function test(x) {
 }
 
 test(40);
+
+// FUNCTION PROBLEM SET
+
+function isEven(num) {
+  return num % 2 === 0;
+}
+
+isEven(4);
+isEven(21);
+isEven(68);
+isEven(333);
+
+// Next Problem Set
+
+function factorial(num) {
+  if (num === 0 || num === 1) return 1;
+  for (var i = num - 1; i >= 1; i--) {
+    num = num * i;
+  }
+  return num;
+}
+
+factorial(5);
+factorial(2);
+factorial(10);
+factorial(0);
+
+// Last Problem Set
+
+function kebabToSnake(str) {
+  // find and replace dashes to underscores
+  return str.replace(/-/g, '_');
+}
+
+kebabToSnake('hello-world');
+kebabToSnake('dogs-are-awesome');
+kebabToSnake('blah');
