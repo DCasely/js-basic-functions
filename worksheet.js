@@ -58,3 +58,49 @@ function greet(person1, person2, person3) {
 }
 
 greet('Harry', 'Ron', 'Hermione');
+
+// The 'RETURN' Keyword
+
+function square(x) {
+  return x * x;
+}
+
+square(4);
+
+'4 squared is: ' + square(4);
+
+// Next Exercise
+
+function capitalize(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+var city = 'paris';
+var capital = 'capitalize(city)';
+
+// Next Exercise
+
+function capitalize(str) {
+  if (typeof str === 'number') {
+    return "that's not a string!";
+  }
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+var city = 'paris';
+var capital = 'capitalize(city)';
+
+var num = 37;
+var capital = capitalize(num);
+
+// FUNCTION DECLARATION VS FUNCTION EXPRESSION
+
+// function declaration
+function capitalize(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+// function expression
+var capitalize = function(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+};
