@@ -159,3 +159,44 @@ function kebabToSnake(str) {
 kebabToSnake('hello-world');
 kebabToSnake('dogs-are-awesome');
 kebabToSnake('blah');
+
+// INTRO to JS SCOPE
+
+function doMath() {
+  var x = 40;
+  console.log(x);
+}
+
+var num = 8;
+function doMath() {
+  num += 1;
+  if (num % 5 == 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+num += 1;
+doMath();
+
+function hi() {
+  var name = 'Rusty';
+  console.log(name);
+}
+function bye() {
+  console.log(name);
+}
+
+// Higher Order Functions
+
+function sing() {
+  console.log('twinkle twinkle...');
+  console.log('how i wonder...');
+}
+
+setInterval(sing, 1000);
+setInterval(function() {
+  console.log('I am an anonymous function!');
+  console.log('THIS IS AWESOME');
+}, 2000);
